@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="shortcut icon" href="img/favicon.png" type="image/png">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Моя карточка</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="all">
+        <header class="header">
+            <a class="logo" href="index.html">
+                <img src="img/logo.svg" alt="logotype">
+            </a>
+            <nav>
+                <ul class="menu">
+                    <li class="menu__list"><a class="menu__link" href="index.html">Главная</a></li>
+                    <li class="menu__list"><a class="menu__link menu__link_active" href="students.html">Студенты</a></li>
+                    <li class="menu__list"><a class="menu__link" href="about.html">О курсе</a></li>
+                    <li class="menu__list"><a class="menu__link" href="contacts.html">Контакты</a></li>
+                </ul>
+            </nav>
+            <a class="button" href="#">Войти</a>
+        </header>
+        <main class="content__my_card">
+            <h1 class="title__my_card"> Встречайте!</h1>
+            <h2 class="title__my_card"> Студент года и неординарная личность!</h2>
+            <div class="biography__my_card">
+                <div class="biography">
+                    <h2 class="text__my_card text__my_card_one">Денчик!</h2>
+                    <h3 class="text__my_card">Я человек тяжелой судьбы.
+                    </h3>
+                    <h3 class="text__my_card">Родился 5 мартабря 1988 г. в тайне от в родителей.
+                    </h3>
+                    <h3 class="text__my_card">По гороскопу - Рысь.
+                    </h3>
+                    <h3 class="text__my_card">Плохо разбираюсь в музыке, любимый певец - Ленин.
+                    </h3>
+                    <h3 class="text__my_card">Хобби - Косоглазие.
+                    </h3>
+                    <h3 class="text__my_card">Считаю что жизнь нужно прожить так, чтобы было стыдно рассказать, но
+                        приятно вспомнить.
+                    </h3>
+                    <h3 class="text__my_card">Опыт работы: Пять лет работал в консерватории имени Чайковского - клал
+                        кафель в классе саксофона.
+                    </h3>
+                    <h3 class="text__my_card">Образование: Образовался от матери и отца.
+                    </h3>
+                    <h3 class="text__my_card">Пользуюсь мобильной связью, мой любимый тариф - "Перезвони".
+                    </h3>
+                    <h3 class="text__my_card">Накачал мышцы из Интернета, а в детстве упал с дерева и повредил себе
+                        смекалку.
+                    </h3>
+                </div>
+                <img class="foto__my_card" src="img/my_foto.jpg" alt="мое фото">
+            </div>
+        </main>
+    </div>
+    <footer class="footer">
+        <p>2023 &copy; <a class="footer__text" href="#">учебный центр</a></p>
+    </footer>
+
+
+    <div class="button_border">
+        <form action="#">
+            <p class="button_border_text">Войти на сайт</p>
+            <p><input class="button_border_login" name="login" placeholder="Логин"></p>
+            <p><input class="button_border_pass" name="pass" type="password" placeholder="Пароль"></p>
+            <p class="button_border_submit_p"><a class="button_border_submit" href="#">Войти</a></p>
+        </form>
+    </div>
+
+
+
+
+    <script>
+        //         alert('Здравствуйте!')
+        //         let userName = prompt('Как вас зовут?');
+        //         alert(`Добро пожаловать на сайт ${userName}
+        // и
+        // удачного вам дня!!!`)
+
+        const buttonEl = document.querySelector('.button');
+        const blockEl = document.querySelector('.button_border');
+        const buttonEK = document.querySelector('.button_border_submit');
+
+        buttonEl.addEventListener('click', function (e) {
+            blockEl.classList.toggle('visible')
+        });
+
+        buttonEK.addEventListener('click', function (e) {
+            blockEl.classList.toggle('visible')
+        });
+
+    </script>
+</body>
+
+</html>

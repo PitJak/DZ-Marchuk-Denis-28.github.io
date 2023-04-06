@@ -178,7 +178,7 @@ img {
     margin-top: 8px;
 }
 
-/* abaut */
+/* about */
 .title_abaut {
     font-style: normal;
     font-weight: 700;
@@ -263,8 +263,6 @@ img {
     display: none;
 }
 
-
-
 .button_border_text {
     margin-top: 26px;
     margin-bottom: 36px;
@@ -328,12 +326,49 @@ img {
     background: #fff;
     color: #EA5D21;
     transition: 1s;
-    border: 1px solid #213B7E;
     border-radius: 50%;
 }
 
+.button_border_submit:hover {
+    background: #213B7E;
+    ;
+    color: #fff;
+}
 
+/* my_card */
 
+.content__my_card {
+    padding-left: calc(50% - 911px / 2);
+    padding-right: calc(50% - 911px / 2);
+}
+
+.title__my_card,
+.text__my_card_one,
+.text__my_card {
+    text-align: center;
+}
+
+.biography__my_card {
+    display: flex;
+    align-items: center;
+}
+
+.text__my_card {
+    margin: 8px;
+    
+}
+
+.foto__my_card {
+    width: 60%;
+    height: 60%;
+    padding: 8px;
+}
+
+.text__my_card_one {
+    background-color: #213B7E;
+    color: #fff;
+    border-radius: 40px;
+}
 
 
 /* Стили адаптив */
@@ -453,5 +488,9 @@ img {
         width: 85%;
         margin-left: 14px;
         margin-right: 14px;
+    }
+
+    .biography__my_card {
+        flex-direction: column-reverse;
     }
 }
